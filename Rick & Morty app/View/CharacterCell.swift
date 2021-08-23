@@ -25,7 +25,7 @@ class CharacterCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 5, left: 6, bottom: 5, right: 6))
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 5, left: 6, bottom: 7, right: 6))
         contentView.backgroundColor = .systemGray6
         contentView.layer.cornerRadius = 10
     }

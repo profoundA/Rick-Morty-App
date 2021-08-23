@@ -20,6 +20,7 @@
 		32421A6C26CAE03B006C77A5 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32421A6B26CAE03B006C77A5 /* Networking.swift */; };
 		32421AAE26CD3ADE006C77A5 /* Get_Schwifty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32421AAD26CD3ADE006C77A5 /* Get_Schwifty.ttf */; };
 		32421AB026CD49C8006C77A5 /* EpisodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32421AAF26CD49C8006C77A5 /* EpisodeCell.swift */; };
+		325498A926CEC5BA00C46288 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325498A826CEC5BA00C46288 /* Episode.swift */; };
 		B4AFA58CEDF51EEBFC9F23F4 /* Pods_Rick___Morty_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB53094A83561014E890945F /* Pods_Rick___Morty_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		32421A6B26CAE03B006C77A5 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		32421AAD26CD3ADE006C77A5 /* Get_Schwifty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Get_Schwifty.ttf; sourceTree = "<group>"; };
 		32421AAF26CD49C8006C77A5 /* EpisodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeCell.swift; sourceTree = "<group>"; };
+		325498A826CEC5BA00C46288 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 		68404BEE33308DF59D0D0247 /* Pods-Rick & Morty app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rick & Morty app.release.xcconfig"; path = "Target Support Files/Pods-Rick & Morty app/Pods-Rick & Morty app.release.xcconfig"; sourceTree = "<group>"; };
 		AB53094A83561014E890945F /* Pods_Rick___Morty_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Rick___Morty_app.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,11 +83,11 @@
 				32421A6726CAA521006C77A5 /* App */,
 				32421A6226CAA452006C77A5 /* Model */,
 				32421A6126CAA41E006C77A5 /* Controllers */,
-				32421A4326CA6FED006C77A5 /* Main.storyboard */,
 				32421A6B26CAE03B006C77A5 /* Networking.swift */,
-				32421A4626CA6FEF006C77A5 /* Assets.xcassets */,
+				32421A4326CA6FED006C77A5 /* Main.storyboard */,
 				32421A4826CA6FEF006C77A5 /* LaunchScreen.storyboard */,
 				32421A4B26CA6FEF006C77A5 /* Info.plist */,
+				32421A4626CA6FEF006C77A5 /* Assets.xcassets */,
 			);
 			path = "Rick & Morty app";
 			sourceTree = "<group>";
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				32421A5A26CA8BF6006C77A5 /* Character.swift */,
+				325498A826CEC5BA00C46288 /* Episode.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				32421A6A26CAD5A4006C77A5 /* UIImageViewExtension.swift in Sources */,
 				32421A6C26CAE03B006C77A5 /* Networking.swift in Sources */,
 				32421A5426CA7576006C77A5 /* CharacterCell.swift in Sources */,
+				325498A926CEC5BA00C46288 /* Episode.swift in Sources */,
 				32421A5226CA70EC006C77A5 /* SecondViewController.swift in Sources */,
 				32421A4226CA6FED006C77A5 /* ViewController.swift in Sources */,
 				32421A5B26CA8BF6006C77A5 /* Character.swift in Sources */,
@@ -426,7 +430,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anmlobanov.Rick---Morty-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -447,7 +451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anmlobanov.Rick---Morty-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
