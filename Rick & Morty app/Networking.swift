@@ -17,7 +17,7 @@ class Networking {
     
     func loadCharacters(completition: @escaping ([Result], Info) -> Void) {
         
-        AF.request("https://rickandmortyapi.com/api/character/?page=1").responseDecodable(of: Character.self) { response in
+        AF.request("https://rickandmortyapi.com/api/character").responseDecodable(of: Character.self) { response in
             guard let character = response.value else { return }
             
             completition(character.results, character.info)
